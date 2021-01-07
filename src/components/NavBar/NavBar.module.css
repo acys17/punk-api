@@ -1,0 +1,121 @@
+.navbar {
+  width: 250px;
+  background: white;
+  color: #242424;
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+}
+
+.navbar img {
+  z-index: 1;
+  height: 250px;
+  width: 220px;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.navbar h1 {
+  margin: 10px 10px;
+}
+
+.navbar .navitems {
+  width: 230px;
+  padding: 10px;
+  margin: 60px auto;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .navitems .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .navitems .checkbox label {
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    width: 170px;
+  }
+  .navbar img {
+    width: 150px;
+    height: 150px;
+  }
+  .navbar .navitems {
+    width: 150px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 180px;
+  }
+  .navbar img {
+    width: 140px;
+    height: 140px;
+  }
+  .navbar .navitems {
+    width: 180px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .navbar {
+    background-color: white;
+    width: 100vw;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar img {
+    height: 70px;
+    width: 70px;
+  }
+  .navbar .navitems {
+    padding: 10px;
+    margin: 0;
+    width: 70vw;
+    font-size: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbar .navitems .checkbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .navitems .checkbox label {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=NavBar.module.css.map */

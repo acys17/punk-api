@@ -29,7 +29,6 @@ const App = () => {
       }))
   }
 
-console.log(beerInfo);
   if(filterABV === true) {
     beerInfo = beerInfo.filter((beer) => beer.abv > 6);
   };

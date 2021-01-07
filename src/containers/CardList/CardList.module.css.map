@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "CardList.module.scss"
+    ],
+    "names": [],
+    "file": "CardList.module.css"
+}

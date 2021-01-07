@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Card.module.scss";
 
-import MoreDetail from "../MoreDetail";
-
 const Card = (props) => {
+  const [cardVisible, setCardVisible] = useState(false);
   const { 
     name, 
     tagline, 
@@ -24,7 +23,6 @@ const Card = (props) => {
     return (ingredient.name);
   })
 
-  const [cardVisible, setCardVisible] = useState(false);
 
   const shortenDescription = (description) => {
     if(cardVisible === false && description.length > 80) {
@@ -39,12 +37,11 @@ const Card = (props) => {
     ? tagline
     : tagline.substring(0, 50) + "...";
 
-  const isCardVisible = (e) => {
+  const isCardVisible = () => {
     setCardVisible(!cardVisible)
   }
- 
+
   const cardIsVisible = cardVisible ? styles.primaryCard : styles.card
-    
 
   return (
     <section className={cardIsVisible} >
@@ -60,6 +57,7 @@ const Card = (props) => {
         <p>Hops: {listHops.join(", ")}</p>
         <p>Malt: {listMalt.join(", ")}</p>
       </div> 
+      <span className={styles.closeButton} onClick={isCardVisible}>X</span>
     </section>
   );
 };
