@@ -1,0 +1,103 @@
+.navbar {
+    width: 250px;
+    background: rgb(255, 255, 255);
+    color: rgb(36, 36, 36);
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+
+    img {
+        z-index: 1;
+        height: 250px;
+        width: 220px;
+        background-color: transparent;
+        margin-left: 10px;
+    }
+
+    h1 {
+        margin: 10px 10px;
+    }
+    
+    .navitems {
+        width: 230px;
+        padding: 10px;
+        margin: 60px auto;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+
+        .checkbox {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                padding: 20px 0;
+                cursor: pointer;
+            }   
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        width: 170px;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .navitems {
+            width: 150px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        width: 180px;
+
+        img {
+            width: 140px;
+            height: 140px;
+        }
+
+        .navitems {
+            width: 180px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .navbar {
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            height: 70px;
+            width: 70px;
+        }
+
+        .navitems {
+            padding: 10px;
+            margin: 0;
+            width: 70vw;
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
+
+            .checkbox{
+                display: flex;
+                flex-direction: column;
+                label {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
