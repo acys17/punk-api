@@ -81,11 +81,11 @@
   -webkit-box-shadow: 2px 2px 30px #bbbbbb;
           box-shadow: 2px 2px 30px #bbbbbb;
   width: 55vw;
-  height: 80vh;
+  height: 90vh;
   position: fixed;
   margin: 0 5vw;
   padding: 2vh;
-  margin-top: 5vh;
+  margin-top: 2.5vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[7];
